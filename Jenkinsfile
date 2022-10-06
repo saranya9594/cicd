@@ -1,5 +1,5 @@
 node{
-   stage('1st Checkout'){
+   stage('1 Checkout'){
      git 'https://github.com/saranya9594/my-app.git'
    }
 stage('Maven Build'){
