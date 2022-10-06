@@ -23,5 +23,5 @@ stage('Maven Build'){
 		sh 'docker rm -f tomcattest'
 	}catch(error){
 		//  do nothing if there is an exception
-	}
+	
  
