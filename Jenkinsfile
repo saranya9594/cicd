@@ -28,8 +28,4 @@ stage('Maven Build'){
 	}catch(error){
 		//  do nothing if there is an exception
 	}
-    stage('Docker deployment'){
-   sh 'docker run -d -p 8090:8080 --name tomcattest saranya9594/mybackup' 
-   }
- }
-}
+ 
