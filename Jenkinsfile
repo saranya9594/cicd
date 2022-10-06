@@ -17,11 +17,7 @@ stage('Maven Build'){
  stage('Build Docker Image'){
    sh 'docker build -t saranya9594/mybackup .'
    }
-   stage('Nexus Image Push'){
-   sh "docker login -u admin -p admin123 43.204.116.184:8083"
-   sh "docker tag saranya9594/mybackup 43.204.116.184:8083/saranya:1.0.0"
-   sh 'docker push 43.204.116.184:8083/saranya:1.0.0'
-   }
+   
    stage('Remove Previous Container'){
 	try{
 		sh 'docker rm -f tomcattest'
