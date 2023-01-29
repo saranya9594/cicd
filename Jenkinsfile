@@ -27,5 +27,4 @@ stage('Maven Build'){
    sh 'docker run -d -p 8090:8080 --name tomcattest saranya9594/mybackup' 
    }
  }
-}
- 
+   }
